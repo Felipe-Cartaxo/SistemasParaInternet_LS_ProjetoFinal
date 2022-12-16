@@ -1,0 +1,19 @@
+html {
+  background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+.todo-header {
+  padding: 0.5em;
+  border-bottom: 1px solid #2c3035;
+  text-align: center;
+}
+
+.todo-header h1 {
+  margin: 0;
+}
