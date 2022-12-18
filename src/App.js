@@ -100,7 +100,7 @@ function App() {
               placeholder="Título da tarefa"
               onChange={(e) => setTitle(e.target.value)} // evento para captar a mudança do state a cada tecla que o usuário pressiona
               value={title || ""} // o title pode começar com o valor vazio, mas ao existir um valor para title, ele será mostrado
-              required
+              pattern= "^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$" // permite que apenas letras, números e espaços sejam inseridos no input
             />
           </div>
           <div className="form-control">
@@ -111,6 +111,7 @@ function App() {
               placeholder="Tempo estimado (em horas)"
               onChange={(e) => setTime(e.target.value)} // evento para captar a mudança do state a cada tecla que o usuário pressiona
               value={time || ""} // o time pode começar com o valor vazio, mas ao existir um valor para title, ele será mostrado
+              pattern="^(0|[1-9][0-9]*)$" // permite que apenas números sejam inseridos no input
               required
             />
           </div>
