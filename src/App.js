@@ -1,3 +1,7 @@
+// 1) npm install
+// 2) npm run server (deixe-o rodando)
+// 3) abra outro terminal e dê um npm start
+
 import './App.css';
 
 import { useState, useEffect } from "react"; // importação dos hooks que utilizaremos no projeto
